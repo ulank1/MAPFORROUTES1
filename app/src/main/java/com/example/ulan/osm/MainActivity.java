@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements MapEventsReceiver
         setSupportActionBar(toolbar);
         MapEventsOverlay mapEventsOverlay = new MapEventsOverlay(this, this);
         s = new ArrayList<>();
-        s.add("#");
+       // s.add("#");
         for (int i = 100; i < 400; i++) {
             s.add(i + "");
         }
@@ -178,6 +178,7 @@ public class MainActivity extends AppCompatActivity implements MapEventsReceiver
 
         spinner2 = (Spinner) findViewById(R.id.spiner2);
         spinner2.setAdapter(adapter2);
+        spinner2.setSelection(0);
 
         spinner = (Spinner) findViewById(R.id.spiner);
         spinner.setAdapter(adapter);
